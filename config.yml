@@ -23,5 +23,5 @@ params:
         - name: "Github"
           url: "https://github.com/Quasili-Software"
         - name: "Email"
-          url: "mailto:yolan@quasili.ch"
+          url: "mailto:info@quasili.ch"
     env: production
