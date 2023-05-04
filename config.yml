@@ -1,9 +1,74 @@
 baseURL: http://quasili.ch/
 languageCode: en-us
-title: Quasili Software
+title: Quasili Consulting
 theme: "PaperMod"
 
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+          main:
+            - identifier: services
+              name: Services
+              url: /services/
+              weight: 10
+                # - identifier: portfolio
+                #   name: Portfolio
+                #   url: /portfolio/
+                #   weight: 20
+                #   hidden: true
+            - identifier: Contact
+              name: Contact
+              url: /contact/
+              weight: 30
+
+    fr:
+        languageName: ":fr:"
+        weight: 2
+        profileMode:
+          enabled: true
+          title: "Quasili Consulting Sàrl" # optional default will be site title
+          subtitle: "Où l'on aime la complexité"
+          imageUrl: "logo.png" # optional
+          imageTitle: "A graph of a quasi-linear complexity." # optional
+          imageWidth: 120 # custom size
+          imageHeight: 120 # custom size
+          buttons:
+              - name: Engagez un Cryptographe
+                url: "/fr/contact/"
+        menu:
+          main:
+            - identifier: services
+              name: Services
+              url: /services/
+              weight: 10
+                # - identifier: portfolio
+                #   name: Portfolio
+                #   url: /portfolio/
+                #   weight: 20
+            - identifier: Contact
+              name: Contact
+              url: /contact/
+              weight: 30
+
 params:
+    keywords: [Consulting, Cryptographer, Cryptography, Blockchain, Post-quantum, Threshold, Cryptographie, Cryptology, Cryptologie]
+    ShowReadingTime: false
+    ShowShareButtons: false
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowWordCount: false
+    ShowRssButtonInSectionTermList: false
+    UseHugoToc: false
+    disableSpecial1stPost: true
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: true
+    showtoc: false
+    tocopen: false
     profileMode:
         enabled: true
         title: "Quasili Consulting LLC" # optional default will be site title
@@ -12,16 +77,15 @@ params:
         imageTitle: "A graph of a quasi-linear complexity." # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
-        #buttons:
-            #- name: Archive
-            #  url: "/archive"
-            #- name: Github
-
+        buttons:
+            - name: Hire a Cryptographer
+              url: "/contact/"
+                #- name: Github
     socialIcons: # optional
-      #        - name: "Twitter"
-      #   url: "https://twitter.com/anomalroil"
-        - name: "Github"
-          url: "https://github.com/Quasili-Software"
+      #  - name: "Twitter"
+      #    url: "https://twitter.com/anomalroil"
+      #  - name: "Github"
+      #    url: "https://github.com/Quasili-Software"
         - name: "Email"
           url: "mailto:info@quasili.ch"
     env: production
